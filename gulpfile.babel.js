@@ -68,11 +68,25 @@ gulp.task('styles', () => {
         .pipe(gulp.dest('app/styles'));
 });
 
+gulp.task('images', () => {
+    return gulp.src('app/images/**/*')
+        .pipe($.if($.if.isFile, $.cache($.imagemin({
+            progressive: true,
+            interlaced: true,
+            svgoPlugins: [{cleanupIDs: false}]
+        }))))
+        .on('error', function(err) {
+            $.util.log(err);
+            this.end();
+        })
+        .pipe(gulp.dest('dist/images'));
+});
+
 gulp.task('extras', () => {
     return gulp.src([
         'app/**/*',
         '!app/manifest.json',
-        '!app/{scripts,styles}/**/*'
+        '!app/{scripts,styles,images}/**/*'
     ]).pipe(gulp.dest('dist'));
 });
 
@@ -126,7 +140,7 @@ gulp.task('debug', ['scripts', 'styles'], () => {
     gulp.watch('app/templates/**/*.hbs', ['templates']);
 });
 
-gulp.task('build', ['manifest', 'extras'], () => {
+gulp.task('build', ['manifest', 'images', 'extras'], () => {
     const pkg = readJSON('./package.json');
 
     return gulp.src('dist/**/*')
