@@ -1,6 +1,6 @@
 {
   "name": "markdown-viewer",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A chrome extension to preview the Markdown.",
   "main": "index.js",
   "scripts": {
