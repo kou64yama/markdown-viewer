@@ -1,7 +1,7 @@
 {
   "name": "markdown-viewer",
   "version": "0.0.1",
-  "description": "Markdown Viewer",
+  "description": "A chrome extension to preview the Markdown.",
   "main": "index.js",
   "scripts": {
     "build": "npm install && gulp",
