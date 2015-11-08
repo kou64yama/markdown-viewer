@@ -1,6 +1,6 @@
 {
   "name": "markdown-viewer",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Markdown Viewer",
   "main": "index.js",
   "scripts": {
@@ -25,6 +25,7 @@
     "browserify": "^12.0.1",
     "del": "^2.0.2",
     "gulp": "^3.9.0",
+    "gulp-bump": "^1.0.0",
     "gulp-chrome-manifest": "0.0.11",
     "gulp-define-module": "^0.1.4",
     "gulp-handlebars": "^4.0.0",
@@ -38,12 +39,14 @@
     "gulp-stylus": "^2.1.0",
     "gulp-uglify": "^1.4.2",
     "gulp-util": "^3.0.7",
+    "gulp-zip": "^3.0.2",
     "handlebars": "^3.0.3",
     "lodash.assign": "^3.2.0",
     "marked": "^0.3.5",
     "merge2": "^0.3.6",
     "qwery": "^4.0.0",
     "sanitize-html": "^1.11.1",
+    "semver": "^5.0.3",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0",
     "watchify": "^3.6.0"
