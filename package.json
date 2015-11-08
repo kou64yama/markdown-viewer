@@ -1,0 +1,51 @@
+{
+  "name": "markdown-viewer",
+  "version": "0.0.0",
+  "description": "Markdown Viewer",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm install && gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kou64yama/markdown-viewer.git"
+  },
+  "keywords": [],
+  "author": "YAMADA Koji",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kou64yama/markdown-viewer/issues"
+  },
+  "homepage": "https://github.com/kou64yama/markdown-viewer#readme",
+  "devDependencies": {
+    "babel-core": "^6.1.2",
+    "babel-preset-es2015": "^6.1.2",
+    "babelify": "^7.2.0",
+    "browserify": "^12.0.1",
+    "del": "^2.0.2",
+    "gulp": "^3.9.0",
+    "gulp-chrome-manifest": "0.0.11",
+    "gulp-define-module": "^0.1.4",
+    "gulp-handlebars": "^4.0.0",
+    "gulp-if": "^2.0.0",
+    "gulp-jsonminify": "^1.0.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-load-plugins": "^1.1.0",
+    "gulp-minify-css": "^1.2.1",
+    "gulp-size": "^2.0.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-stylus": "^2.1.0",
+    "gulp-uglify": "^1.4.2",
+    "gulp-util": "^3.0.7",
+    "handlebars": "^3.0.3",
+    "lodash.assign": "^3.2.0",
+    "marked": "^0.3.5",
+    "merge2": "^0.3.6",
+    "qwery": "^4.0.0",
+    "sanitize-html": "^1.11.1",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.6.0"
+  }
+}

@@ -1,0 +1,92 @@
+.markdown-viewer
+  body
+    margin 0
+    font-size 12pt
+    line-height 1.5
+    font-family "Arial", "Meiryo", sans-serif;
+    background #eee
+
+  pre, code
+    font-family "Consolas", "MS Gothic", monospace
+
+  img
+    max-width 100%
+
+  pre
+    background #eee
+    overflow auto
+    padding 1em
+
+  code
+    background #eee
+    border-radius 0.25em
+    padding 0 0.25em
+
+  a
+    color #69c
+
+  h1
+    text-align center
+  h2
+    border-bottom 1pt solid #999
+
+  table
+    border-collapse collapse
+    border-top 1pt solid #999
+    border-bottom 1pt solid #999
+  tr:nth-child(2n)
+    background #eee
+  th, td
+    padding 0.5rem 1rem
+  th
+    background #999
+    color #eee
+    border-bottom 1pt solid #999
+    &:not(:first-child)
+      border-left 1pt solid #bbb
+
+  .markdown-body
+    margin-left 20rem
+    max-width 50rem
+    padding 5rem
+    background #fff
+    color #444
+
+  .markdown-nav
+    position fixed
+    top 0
+    left 0
+    bottom 0
+    width 20rem
+    overflow auto
+    color #999
+    background #333
+    padding 1rem 0
+    ul
+      list-style none
+      margin 0
+      padding 0
+
+    .markdown-nav-link
+      display block
+      padding 0 1rem
+      color inherit
+      text-decoration inherit
+      white-space nowrap
+      overflow hidden
+      text-overflow ellipsis
+      &:hover
+        background #444
+
+    .markdown-nav-link-level-1
+      padding-left 1rem
+    .markdown-nav-link-level-2
+      padding-left 2rem
+    .markdown-nav-link-level-3
+      padding-left 3rem
+    .markdown-nav-link-level-4
+      padding-left 4rem
+    .markdown-nav-link-level-5
+      padding-left 5rem
+    .markdown-nav-link-level-6
+      padding-left 6rem

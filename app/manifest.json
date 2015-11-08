@@ -1,0 +1,29 @@
+{
+  "name": "Markdown Viewer",
+  "version": "0.0.0",
+  "manifest_version": 2,
+  "description": "Markdown Viewer",
+  "default_locale": "en",
+  "background": {
+    "scripts": [
+      "scripts/chromereload.js"
+    ]
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*/*.md",
+        "https://*/*.md",
+        "file://*/*.md"
+      ],
+      "js": [
+        "scripts/injected.js"
+      ],
+      "css": [
+        "styles/injected.css"
+      ],
+      "run_at": "document_end",
+      "all_frames": false
+    }
+  ]
+}
