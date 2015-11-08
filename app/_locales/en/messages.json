@@ -1,1 +1,10 @@
-{}
+{
+  "appName": {
+    "message": "Markdown Viewer",
+    "description": "The name of the application"
+  },
+  "appDescription": {
+    "message": "Preview the Markdown.",
+    "description": "The description of the application"
+  }
+}
