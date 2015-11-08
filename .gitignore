@@ -1,6 +1,7 @@
 node_modules
 .tmp
 dist
+build
 app/scripts
 app/styles
 app/templates/*.js
