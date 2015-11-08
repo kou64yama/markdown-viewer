@@ -8,7 +8,7 @@ A chrome extension to preview the Markdown.
 
 ## Install
 
-Coming soon...
+Install from [Chrome Web Store](https://chrome.google.com/webstore/detail/markdown-viewer/cojimjlhpijjamegghihghjcjcoggpoo).
 
 ## Usage
 
